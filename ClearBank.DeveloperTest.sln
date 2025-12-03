@@ -1,0 +1,83 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6A0D802-F67F-488A-811B-5F723B9D53B2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1313CC51-3FB9-4798-A649-1FE12D90C26E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClearBank.DeveloperTest", "ClearBank.DeveloperTest", "{593A8EF3-A67C-498C-B73D-5CD703F3E063}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClearBank.DeveloperTest.API", "src\ClearBank.DeveloperTest\ClearBank.DeveloperTest.API\ClearBank.DeveloperTest.API.csproj", "{CA5DA7A6-C5F2-4365-9157-1F7A6A483770}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClearBank.DeveloperTest.Core", "src\ClearBank.DeveloperTest\ClearBank.DeveloperTest.Core\ClearBank.DeveloperTest.Core.csproj", "{656359EE-4850-45D6-9477-14BF80F60D43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClearBank.DeveloperTest.Infrastructure", "src\ClearBank.DeveloperTest\ClearBank.DeveloperTest.Infrastructure\ClearBank.DeveloperTest.Infrastructure.csproj", "{4D75F325-7925-40A3-8A7F-678FE099DCDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{83889E08-0FDF-4C8E-9AEC-71443EBE8D2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClearBank.DeveloperTest", "ClearBank.DeveloperTest", "{B197E4A2-B00B-4BFD-84D9-369A30CA0AD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClearBank.DeveloperTest.API.IntegrationTests", "tests\ClearBank.DeveloperTest\ClearBank.DeveloperTest.API.IntegrationTests\ClearBank.DeveloperTest.API.IntegrationTests.csproj", "{0A7331F2-D7BA-497B-B5E6-FF7590506447}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClearBank.DeveloperTest.Core.UnitTests", "tests\ClearBank.DeveloperTest\ClearBank.DeveloperTest.Core.UnitTests\ClearBank.DeveloperTest.Core.UnitTests.csproj", "{9D6AAD92-1F38-45F2-8470-E993DBFB22B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClearBank.DeveloperTest.Infrastructure.UnitTests", "tests\ClearBank.DeveloperTest\ClearBank.DeveloperTest.Infrastructure.UnitTests\ClearBank.DeveloperTest.Infrastructure.UnitTests.csproj", "{69532EC0-01B8-4F17-8780-60C4BF26C754}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7055927F-8A45-4600-A611-D19D67797495}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5DA7A6-C5F2-4365-9157-1F7A6A483770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5DA7A6-C5F2-4365-9157-1F7A6A483770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5DA7A6-C5F2-4365-9157-1F7A6A483770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5DA7A6-C5F2-4365-9157-1F7A6A483770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656359EE-4850-45D6-9477-14BF80F60D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656359EE-4850-45D6-9477-14BF80F60D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656359EE-4850-45D6-9477-14BF80F60D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656359EE-4850-45D6-9477-14BF80F60D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D75F325-7925-40A3-8A7F-678FE099DCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D75F325-7925-40A3-8A7F-678FE099DCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D75F325-7925-40A3-8A7F-678FE099DCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D75F325-7925-40A3-8A7F-678FE099DCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7331F2-D7BA-497B-B5E6-FF7590506447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7331F2-D7BA-497B-B5E6-FF7590506447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7331F2-D7BA-497B-B5E6-FF7590506447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7331F2-D7BA-497B-B5E6-FF7590506447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D6AAD92-1F38-45F2-8470-E993DBFB22B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D6AAD92-1F38-45F2-8470-E993DBFB22B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D6AAD92-1F38-45F2-8470-E993DBFB22B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D6AAD92-1F38-45F2-8470-E993DBFB22B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69532EC0-01B8-4F17-8780-60C4BF26C754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69532EC0-01B8-4F17-8780-60C4BF26C754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69532EC0-01B8-4F17-8780-60C4BF26C754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69532EC0-01B8-4F17-8780-60C4BF26C754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7055927F-8A45-4600-A611-D19D67797495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7055927F-8A45-4600-A611-D19D67797495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7055927F-8A45-4600-A611-D19D67797495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7055927F-8A45-4600-A611-D19D67797495}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{593A8EF3-A67C-498C-B73D-5CD703F3E063} = {1313CC51-3FB9-4798-A649-1FE12D90C26E}
+		{CA5DA7A6-C5F2-4365-9157-1F7A6A483770} = {593A8EF3-A67C-498C-B73D-5CD703F3E063}
+		{656359EE-4850-45D6-9477-14BF80F60D43} = {593A8EF3-A67C-498C-B73D-5CD703F3E063}
+		{4D75F325-7925-40A3-8A7F-678FE099DCDE} = {593A8EF3-A67C-498C-B73D-5CD703F3E063}
+		{B197E4A2-B00B-4BFD-84D9-369A30CA0AD6} = {83889E08-0FDF-4C8E-9AEC-71443EBE8D2F}
+		{0A7331F2-D7BA-497B-B5E6-FF7590506447} = {B197E4A2-B00B-4BFD-84D9-369A30CA0AD6}
+		{9D6AAD92-1F38-45F2-8470-E993DBFB22B8} = {B197E4A2-B00B-4BFD-84D9-369A30CA0AD6}
+		{69532EC0-01B8-4F17-8780-60C4BF26C754} = {B197E4A2-B00B-4BFD-84D9-369A30CA0AD6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FD3AB78-A704-4127-B03A-7F6E6BEE5883}
+	EndGlobalSection
+EndGlobal

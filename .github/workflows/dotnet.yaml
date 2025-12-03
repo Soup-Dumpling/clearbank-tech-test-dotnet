@@ -1,0 +1,31 @@
+name: .NET Workflow
+
+on:
+  push:
+    branches: ["main", "develop"]
+  pull_request:
+    branches: ["main", "develop"]
+    paths:
+      - "src/**"
+      - "ClearBank.DeveloperTest.sln"
+      - "tests/**"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 8.x
+
+      - name: Install dependencies
+        run: dotnet restore ClearBank.DeveloperTest.sln
+      - name: Build
+        run: dotnet build --configuration Release --no-restore ClearBank.DeveloperTest.sln
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal ClearBank.DeveloperTest.sln

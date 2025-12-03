@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<UserSecretsId>91e7299d-d010-4b6f-ad85-d6dcc2c49ee6</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..\..</DockerfileContext>
+		<DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="12.0.0" />
+		<PackageReference Include="MediatR" Version="12.5.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.17" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="NSubstitute" Version="5.3.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ClearBank.DeveloperTest.Core\ClearBank.DeveloperTest.Core.csproj" />
+        <ProjectReference Include="..\ClearBank.DeveloperTest.Infrastructure\ClearBank.DeveloperTest.Infrastructure.csproj" />
+	</ItemGroup>
+</Project>

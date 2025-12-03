@@ -1,0 +1,23 @@
+services:
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: "mssql"
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+    ports:
+      - "1433:1433"
+  clearbank.developertest.api:
+    image: clearbank.developertest.api
+    depends_on:
+      - sqldata
+    build:
+      context: .
+      dockerfile: src/ClearBank.DeveloperTest/ClearBank.DeveloperTest.API/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "80"
+      - "5001:443"
