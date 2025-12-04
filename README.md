@@ -176,6 +176,11 @@ Scenario: Debtor Account Payment Scheme Mismatch (e.g., trying to FasterPayments
 
 https://github.com/user-attachments/assets/7235aafe-93db-479f-97af-5950cff74719
 
+### What was implemented
+
+- Get Account Detail by Account Number
+- Make Payment
+
 ### Future implementation
 
 - To allow an account holder to deposit funds into the account.
