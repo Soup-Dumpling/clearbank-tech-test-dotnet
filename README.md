@@ -127,13 +127,13 @@ To follow the SOLID principles, each use case has only one responsibility. In ea
 
 Assumptions and Conditions for a Valid Payment:
 
-- In a debtor - creditor relationship, a payment flows from the debtor to the creditor.
-- Both creditor and debtor accounts must be present in the database for a valid payment to occur.
-- The creditor account status must be either AccountStatus.InboundPaymentsOnly OR AccountStatus.Live.
-- The debtor account status must be AccountStatus.Live. If the debtor account status is AccountStatus.InboundPaymentsOnly then it can only receive funds and not send funds to another account.
-- The debtor account balance must be greater than or equal to the requested payment amount, otherwise the account would have insufficient funds for the payment.
-- Both creditor and debtor accounts must be subscribed to the payment scheme that the payment is being sent through, otherwise the payment cannot go through.
-- If either creditor or debtor accounts are not subscribed to a payment scheme then the payment cannot go through.
+- In a debtor - creditor relationship, a payment flows from the debtor to the creditor
+- Both creditor and debtor accounts must be present in the database for a valid payment to occur
+- The creditor account status must be either AccountStatus.InboundPaymentsOnly OR AccountStatus.Live
+- The debtor account status must be AccountStatus.Live. If the debtor account status is AccountStatus.InboundPaymentsOnly then it can only receive funds and not send funds to another account
+- The debtor account balance must be greater than or equal to the requested payment amount, otherwise the account would have insufficient funds for the payment
+- Both creditor and debtor accounts must be subscribed to the payment scheme that the payment is being sent through, otherwise the payment cannot go through
+- If either creditor or debtor accounts are not subscribed to a payment scheme then the payment cannot go through
 - The payment must be today or in the future, it cannot be in the past. For example, yesterday or last week. Otherwise, the payment is invalid
 
 ### Account Table
@@ -173,6 +173,8 @@ Scenario: Debtor Account Payment Scheme Mismatch (e.g., trying to FasterPayments
 - Debtor Account - 45302248
 - Payment Amount - 10000.00
 - Payment Scheme - FasterPayments
+
+https://github.com/user-attachments/assets/7235aafe-93db-479f-97af-5950cff74719
 
 ### Future implementation
 
