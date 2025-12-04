@@ -95,11 +95,11 @@ Then, you can access the project endpoints using the Swagger UI at https://local
 
 ### About each project in solution
 
-| Project                                | Description                                                                                   |
-| -------------------------------------- | --------------------------------------------------------------------------------------------- |
-| ClearBank.DeveloperTest.API            | User Interface - Create your endpoints related to employee service here                       |
-| ClearBank.DeveloperTest.Core           | Business Logic Layer - Core of the employee service - including use cases, domain and context |
-| ClearBank.DeveloperTest.Infrastructure | Data Access Layer - Where all the implementation of employee service, repos, providers go     |
+| Project                                | Description                                                                                    |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| ClearBank.DeveloperTest.API            | User Interface - Create your endpoints related to ClearBank service here                       |
+| ClearBank.DeveloperTest.Core           | Business Logic Layer - Core of the ClearBank service - including use cases, domain and context |
+| ClearBank.DeveloperTest.Infrastructure | Data Access Layer - Where all the implementation of ClearBank service, repos, providers go     |
 
 ### Running the test cases
 
@@ -162,6 +162,8 @@ Scenario:
 - Debtor Account - 31022756
 - Payment Amount - 10000.00
 - Payment Scheme - Chaps
+
+https://github.com/user-attachments/assets/3abda566-811f-4980-91f2-7154f8468d2e
 
 ### Demo Example - Invalid Payment
 
